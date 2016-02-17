@@ -10,7 +10,7 @@ module.exports.registerTasks = function(opt_options) {
   options.packageJsonPath = path.resolve(options.packageJsonPath || 'package.json');
 
   var packageJson = require(options.packageJsonPath);
-  var finalName = '{' + packageJson.name + '}-{' + packageJson.version + '}';
+  var finalName = + packageJson.name + '-' + packageJson.version;
 
   gulp.task('prepare-maven-snapshot', function() {
 	   return gulp.src(['**/*', '!node_modules/', '!node_modules/**'])
