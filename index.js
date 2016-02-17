@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var maven = require('gulp-maven-deploy');
 var path = require('path');
-var runSequence = require('runSequence');
+var runSequence = require('run-sequence');
 
 module.exports.registerTasks = function(opt_options) {
   var options = opt_options || {};
