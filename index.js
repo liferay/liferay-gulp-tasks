@@ -14,7 +14,9 @@ module.exports.registerTasks = function(opt_options) {
 
   gulp.task('prepare-maven-snapshot', function() {
 	   return gulp.src(['**/*', '!node_modules/', '!node_modules/**'])
-  		.pipe(gulp.dest('maven-dist/META-INF/resources/webjars/senna.js/1.0.0-SNAPSHOT'));
+  		.pipe(gulp.dest(
+        path.join('maven-dist/META-INF/resources/webjars', packageJson.name, packageJson.version + '-SNAPSHOT')
+      ));
   });
 
   gulp.task('install-maven-snapshot', function() {
