@@ -1,0 +1,27 @@
+{
+  "name": "gulp-liferay-tasks",
+  "version": "0.0.0",
+  "description": "Gulp tasks to be shared between Liferay projects",
+  "license": "BSD",
+  "repository": "liferay/gulp-liferay-tasks",
+  "author": {
+    "name": "Maira Bello",
+    "email": "maira.araujo@liferay.com"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "jshint index.js"
+  },
+  "keywords": [
+    "gulp",
+    "liferay"
+  ],
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
+}
