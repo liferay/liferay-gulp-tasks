@@ -1,9 +1,9 @@
 {
-  "name": "gulp-liferay-tasks",
+  "name": "liferay-gulp-tasks",
   "version": "0.0.0",
   "description": "Gulp tasks to be shared between Liferay projects",
   "license": "BSD",
-  "repository": "liferay/gulp-liferay-tasks",
+  "repository": "mairatma/liferay-gulp-tasks",
   "author": {
     "name": "Maira Bello",
     "email": "maira.araujo@liferay.com"
@@ -23,5 +23,10 @@
   ],
   "devDependencies": {
     "jshint": "^2.9.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-maven-deploy": "^0.2.0",
+    "run-sequence": "^1.1.5"
   }
 }
