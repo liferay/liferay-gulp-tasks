@@ -12,3 +12,8 @@ liferayGulpTasks.registerTasks(options);
 ```
 
 After calling the `registerTasks` function, several tasks will then be available to run on gulp. As you can see, `registerTasks` receives an optional object to customize these tasks.
+
+
+### Options
+
+`packageJsonPath` - The path to the **package.json** file for the current project. Defaults to **package.json**.
