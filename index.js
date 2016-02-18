@@ -23,11 +23,12 @@ module.exports.registerTasks = function(opt_options) {
   	return gulp.src('.')
   		.pipe(maven.install({
   			'config': {
-  				'artifactId': packageJson.name,
-  				'buildDir': 'maven-dist',
-  				'finalName': finalName,
-  				'groupId': 'com.liferay.webjars',
-  				'type': 'jar'
+          'artifactId': packageJson.name,
+          'buildDir': 'maven-dist',
+          'finalName': finalName,
+          'groupId': 'com.liferay.webjars',
+          'type': 'jar',
+          'version': packageJson.version
   			}
   		}));
   });
@@ -48,6 +49,7 @@ module.exports.registerTasks = function(opt_options) {
   				'finalName': finalName,
   				'groupId': 'com.liferay.webjars',
   				'type': 'jar',
+          'version': packageJson.version,
   				'repositories': [
   					{
   						'id': 'liferay-nexus-ce',
