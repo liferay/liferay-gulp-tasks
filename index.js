@@ -31,7 +31,7 @@ module.exports.registerTasks = function(opt_options) {
 	};
 
 	var getName = function() {
-		return options.artifactIdPrefix + (options.artifactName || require(options.packageJsonPath).name);
+		return options.artifactName || require(options.packageJsonPath).name;
 	};
 
 	var getVersion = function(config) {
@@ -59,7 +59,7 @@ module.exports.registerTasks = function(opt_options) {
 		return gulp.src('.')
 			.pipe(maven.install({
 				'config': {
-					'artifactId': getName(),
+					'artifactId': options.artifactIdPrefix + getName(),
 					'buildDir': 'maven-dist',
 					'finalName': getFinalName(snapshotConfig),
 					'groupId': 'com.liferay.webjars',
@@ -80,7 +80,7 @@ module.exports.registerTasks = function(opt_options) {
 		return gulp.src('.')
 			.pipe(maven.deploy({
 				'config': {
-					'artifactId': getName(),
+					'artifactId': options.artifactIdPrefix + getName(),
 					'buildDir': 'maven-dist',
 					'finalName': getFinalName(),
 					'groupId': 'com.liferay.webjars',
@@ -97,7 +97,7 @@ module.exports.registerTasks = function(opt_options) {
 		return gulp.src('.')
 			.pipe(maven.deploy({
 				'config': {
-					'artifactId': getName(),
+					'artifactId': options.artifactIdPrefix + getName(),
 					'buildDir': 'maven-dist',
 					'finalName': getFinalName(snapshotConfig),
 					'groupId': 'com.liferay.webjars',
