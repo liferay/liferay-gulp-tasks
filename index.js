@@ -118,4 +118,6 @@ module.exports = function(gulp, opt_options) {
 	gulp.task('maven-publish-snapshot', function(done) {
 		runSequence('prepare-maven-snapshot', 'publish-maven-snapshot', 'clean-maven-dist', done);
 	});
+
+	return gulp;
 };
