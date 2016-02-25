@@ -1,15 +1,14 @@
 'use strict';
 
 var del = require('del');
-var gulp = require('gulp');
 var maven = require('gulp-maven-deploy');
 var path = require('path');
 var runSequence = require('run-sequence');
 
-module.exports.registerTasks = function(opt_options) {
+module.exports = function(gulp, opt_options) {
 	var options = opt_options || {};
 	options.artifactIdPrefix = options.artifactIdPrefix || 'com.liferay.webjars.';
-	options.artifactSrc = options.artifactSrc || ['**/*', '!node_modules/', '!node_modules/**'];
+	options.artifactSrc = options.artifactSrc || ['**/*', '!node_modules/', '!node_modules/**'];
 	options.packageJsonPath = path.resolve(options.packageJsonPath || 'package.json');
 	options.repositories = options.repositories || {
 		releases: [
@@ -31,7 +30,7 @@ module.exports.registerTasks = function(opt_options) {
 	};
 
 	var getName = function() {
-		return options.artifactName || require(options.packageJsonPath).name;
+		return options.artifactName || require(options.packageJsonPath).name;
 	};
 
 	var getVersion = function(config) {
