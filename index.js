@@ -11,7 +11,7 @@ module.exports.registerTasks = function(opt_options) {
 	options.artifactIdPrefix = options.artifactIdPrefix || 'com.liferay.webjars.';
 	options.artifactSrc = options.artifactSrc || ['**/*', '!node_modules/', '!node_modules/**'];
 	options.packageJsonPath = path.resolve(options.packageJsonPath || 'package.json');
-	options.repositories = options.repositores || {
+	options.repositories = options.repositories || {
 		releases: [
 			{
 				'id': 'liferay-releases-ce',
