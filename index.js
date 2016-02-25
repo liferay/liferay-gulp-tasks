@@ -20,8 +20,8 @@ module.exports.registerTasks = function(opt_options) {
 		],
 		snapshots: [
 			{
-				'id': 'liferay-nexus-ce',
-				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-releases-ce/'
+				'id': 'liferay-nexus-snapshots-ce',
+				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/'
 			}
 		]
 	};
