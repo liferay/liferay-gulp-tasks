@@ -14,13 +14,13 @@ module.exports.registerTasks = function(opt_options) {
 	options.repositories = options.repositores || {
 		releases: [
 			{
-				'id': 'liferay-nexus-ce',
+				'id': 'liferay-releases-ce',
 				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-releases-ce/'
 			}
 		],
 		snapshots: [
 			{
-				'id': 'liferay-nexus-snapshots-ce',
+				'id': 'liferay-snapshots-ce',
 				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-snapshots-ce/'
 			}
 		]
