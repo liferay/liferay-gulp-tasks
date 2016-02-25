@@ -1,3 +1,10 @@
+# 0.3.0
+
+- The registerTasks method has now removed. Instead, the main export is a function that you call, and you must pass along your version of gulp as well.
+```
+	var gulp = require('liferay-gulp-tasks')(require('gulp'), options);
+```
+
 # 0.2.0
 
 - The default repositories ids have been changed to stay consistent with their urls. Now, ids are:
