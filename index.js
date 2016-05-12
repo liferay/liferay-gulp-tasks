@@ -13,19 +13,11 @@ module.exports = function(gulp, opt_options) {
 	options.repositories = options.repositories || {
 		releases: [
 			{
-				'id': 'liferay-releases-ce',
-				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/'
-			},
-			{
 				'id': 'liferay-public-releases',
 				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/'
 			}
 		],
 		snapshots: [
-			{
-				'id': 'liferay-public-snapshots',
-				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-public-snapshots/'
-			},
 			{
 				'id': 'liferay-public-snapshots',
 				'url': 'https://repository.liferay.com/nexus/content/repositories/liferay-public-snapshots/'
