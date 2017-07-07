@@ -28,6 +28,6 @@
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-maven-deploy": "^0.2.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^2.0.0"
   }
 }
