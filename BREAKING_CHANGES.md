@@ -1,3 +1,9 @@
+# 0.5.0
+
+Chalk just updated to `v2`, which drops support for node `v0.12` and below.
+
+In order to maintain compatibility, we need to specify which version of chalk to use by updating run-sequence to `v2.0.0`.
+
 # 0.4.1
 
 The default repositories ids have been changed to stay consistent with their new urls. Now, ids are:
