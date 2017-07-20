@@ -1,3 +1,7 @@
+# 0.5.1
+
+Append timestamp to the end of snapshot releases.
+
 # 0.5.0
 
 Chalk just updated to `v2`, which drops support for node `v0.12` and below.
