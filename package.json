@@ -26,8 +26,11 @@
   },
   "dependencies": {
     "del": "^2.2.0",
+    "file-system": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-cheerio": "^0.6.2",
     "gulp-maven-deploy": "^0.2.0",
+    "gulp-prompt": "^0.2.0",
     "run-sequence": "^2.0.0"
   }
 }
