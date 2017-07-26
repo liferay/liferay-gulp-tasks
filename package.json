@@ -1,6 +1,6 @@
 {
   "name": "liferay-gulp-tasks",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Gulp tasks to be shared between Liferay projects",
   "license": "BSD",
   "repository": "liferay/liferay-gulp-tasks",
