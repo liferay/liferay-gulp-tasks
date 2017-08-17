@@ -70,7 +70,7 @@ module.exports = function(gulp, opt_options) {
 		}
 		else {
 			fs.writeFile(newSettingsXML,
-				'<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><localRepository></localRepository> <interactiveMode/><usePluginRegistry/><offline/><pluginGroups/><servers><server><id>repo-name</id><username>username</username><password>user-password</password></server><mirrors/><proxies/><profiles/><activeProfiles/></settings>');
+				'<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><localRepository></localRepository><interactiveMode/><usePluginRegistry/><offline/><pluginGroups/><servers/><mirrors/><proxies/><profiles/><activeProfiles/></settings>');
 
 			settingsXML = newSettingsXML;
 		}
