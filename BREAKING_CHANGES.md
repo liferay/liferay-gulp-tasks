@@ -1,3 +1,7 @@
+# 0.5.2
+
+Add custom location for deploying snapshot WebJar
+
 # 0.5.1
 
 Append timestamp to the end of snapshot releases.
