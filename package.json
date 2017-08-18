@@ -1,6 +1,6 @@
 {
   "name": "liferay-gulp-tasks",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Gulp tasks to be shared between Liferay projects",
   "license": "BSD",
   "repository": "liferay/liferay-gulp-tasks",
@@ -31,6 +31,7 @@
     "gulp-cheerio": "^0.6.2",
     "gulp-maven-deploy": "^0.2.0",
     "gulp-prompt": "^0.2.0",
-    "run-sequence": "^2.0.0"
+    "run-sequence": "^2.0.0",
+    "xml-formatter": "^1.0.1"
   }
 }
