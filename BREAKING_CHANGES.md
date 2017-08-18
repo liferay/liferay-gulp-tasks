@@ -1,3 +1,7 @@
+# 0.5.3
+
+Prettify settings.xml file
+
 # 0.5.2
 
 Add custom location for deploying snapshot WebJar
