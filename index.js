@@ -38,7 +38,7 @@ module.exports = function(gulp, opt_options) {
 	};
 
 	var getVersion = function(config) {
-		var version = require(options.packageJsonPath).version;
+		var version = require(options.packageJsonPath).liferayVersion || require(options.packageJsonPath).version;
 
 		return (config && config.snapshot) ? version + '-SNAPSHOT' : version;
 	};
