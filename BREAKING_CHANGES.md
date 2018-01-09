@@ -1,3 +1,7 @@
+# 0.5.5
+
+Allow package.json to use liferayVersion attribute if defined when setting webjar version.
+
 # 0.5.4
 
 Revert timestamp added at the end of the snapshot releases.
