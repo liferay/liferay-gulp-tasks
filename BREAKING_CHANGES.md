@@ -1,3 +1,8 @@
+# 0.5.4
+
+Revert timestamp added at the end of the snapshot releases.
+Update local installation of maven WebJar to be a release instead of a snapshot.
+
 # 0.5.3
 
 Prettify settings.xml file
