@@ -49,6 +49,13 @@ module.exports = function(gulp, opt_options) {
 		});
 	});
 
+	gulp.task('prepare-maven-install', function() {
+		return gulp.src(options.artifactSrc)
+			.pipe(gulp.dest(
+				path.join('maven-dist/META-INF/resources/webjars', getName(), getVersion({snapshot: false}))
+		));
+	});
+
 	gulp.task('prepare-maven-snapshot', function() {
 		return gulp.src(options.artifactSrc)
 			.pipe(gulp.dest(
@@ -56,7 +63,7 @@ module.exports = function(gulp, opt_options) {
 		));
 	});
 
-	gulp.task('init-maven-snapshot', function() {
+	gulp.task('init-maven-install', function() {
 		var settingsXML;
 		var webjarPath;
 
@@ -103,8 +110,8 @@ module.exports = function(gulp, opt_options) {
 	});
 
 
-	gulp.task('install-maven-snapshot', function() {
-		var snapshotConfig = { snapshot: true };
+	gulp.task('install-maven-release', function() {
+		var snapshotConfig = { snapshot: false };
 
 		return gulp.src('.')
 			.pipe(maven.install({
@@ -159,7 +166,7 @@ module.exports = function(gulp, opt_options) {
 	});
 
 	gulp.task('maven-install', function(done) {
-		runSequence('init-maven-snapshot', 'prepare-maven-snapshot', 'install-maven-snapshot', 'clean-maven-dist', done);
+		runSequence('init-maven-install', 'prepare-maven-install', 'install-maven-release', 'clean-maven-dist', done);
 	});
 
 	gulp.task('maven-publish', function(done) {
