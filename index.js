@@ -39,9 +39,8 @@ module.exports = function(gulp, opt_options) {
 
 	var getVersion = function(config) {
 		var version = require(options.packageJsonPath).version;
-		var snapshot = '-SNAPSHOT-' + Date.now();
 
-		return (config && config.snapshot) ? version + snapshot : version;
+		return (config && config.snapshot) ? version + '-SNAPSHOT' : version;
 	};
 
 	gulp.task('clean-maven-dist', function(callback) {
